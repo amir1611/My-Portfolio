@@ -853,6 +853,7 @@ img{
 .project__img{
     width:373px;
     justify-self: center;
+    pointer-events: none;
 }
 
 /*==================== TESTIMONIAL ====================*/
