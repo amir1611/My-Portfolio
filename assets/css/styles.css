@@ -323,12 +323,24 @@ img{
     grid-column:1/3;
 }
 
-.home__title{
+.typed-out{
     font-size:var(--big-font-size);
     text-align: center;
     color: hsl(183deg 100% 50%);
     text-shadow: 2px 3px black;
+    overflow: hidden;
+
+    white-space: nowrap;
+    animation: typing 2s forwards;
+    width: 0;
 }
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
 
 .home__subtitle{
     font-size:var(--h3-font-size);
