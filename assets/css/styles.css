@@ -299,6 +299,10 @@ img{
     row-gap: 1rem;
 }
 
+.home_social_animation{
+    animation-duration: 100000000s;
+}
+
 .home__social-icon{
     font-size:1.25rem;
     color:var(--first-color);
