@@ -57,7 +57,7 @@
 
               <li class="nav__item">
                 <a href="#services" class="nav__link">
-                  <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                  <i class="uil uil-briefcase-alt nav__icon"></i> Expertise
                 </a>
               </li>
 
@@ -278,11 +278,33 @@
             style="pointer-events: none"
             class="about__container container grid"
           >
-            <img
-              src="assets/img/amiraws.jpg"
-              alt="Amir flexing in AWS Malaysia Office"
-              class="about__img"
-            />
+          <img
+          src="assets/img/amiraws.jpg"
+          alt="Amir flexing in AWS Malaysia Office"
+          class="about__img"
+          data-sr-id="8"
+          style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+            transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.4s;
+            box-shadow: 0 0 60px rgba(93, 36, 173, 0.8);
+            animation: glowingAnimation 3s infinite;"
+        />
+        
+        <style>
+          @keyframes glowingAnimation {
+            0% {
+              box-shadow: 0 0 60px rgba(93, 36, 173, 0.8);
+            }
+            50% {
+              box-shadow: 0 0 100px rgba(93, 36, 173, 0.8);
+            }
+            100% {
+              box-shadow: 0 0 60px rgba(102, 0, 255, 0.8);
+            }
+          }
+        </style>
+        
+        
+        
 
             <div class="about__data">
               <br />
@@ -538,7 +560,7 @@
         <!--==================== SERVICES ====================-->
         <section class="services section" id="services">
           <div class="services__title">
-            <h2 class="section__title">Services</h2>
+            <h2 class="section__title">Expertise</h2>
             <span class="section__subtitle">What I can offer you</span>
           </div>
 
@@ -730,7 +752,7 @@
               <!--==================== PORTFOLIO 1====================-->
               <div class="portfolio__content grid swiper-slide">
                 <img
-                  src="assets/img/reportthing_thumbnail.png"
+                  src="assets/img/yayasan.png"
                   alt=""
                   class="portfolio__img"
                 />
@@ -758,9 +780,9 @@
                   class="portfolio__img"
                 />
                 <div class="portfolio__data">
-                  <h3 class="portfolio__title">Simple Crypto Dashboard</h3>
+                  <h3 class="portfolio__title">Crypto Dashboard</h3>
                   <p class="portfolio__description">
-                    Simple Crypto Dashboard app using React and CoinGecko API.
+                    Crypto Dashboard app using React and CoinGecko API.
                   </p>
                   <a
                     href="https://cgcrypto-dashboard.vercel.app/"
@@ -779,10 +801,12 @@
                 <div class="portfolio__data">
                   <h3 class="portfolio__title">ToDo List</h3>
                   <p class="portfolio__description">
-                    A Simple ToDo list Web App built using vue.js
+                    A ToDo list Web App built using vue.js
                   </p>
                   <a
-                    href="https://stellular-twilight-827e82.netlify.app/"
+                    href=" https://today-notes.netlify.app/"
+                    
+         
                     target="_blank"
                     class="button button--flex button--small portfolio__button"
                   >
@@ -795,17 +819,17 @@
               <!--==================== PORTFOLIO 4====================-->
               <div class="portfolio__content grid swiper-slide">
                 <img
-                  src="assets/img/portfolio4.png"
+                  src="assets/img/tasty-treat.png"
                   alt=""
                   class="portfolio__img"
                 />
                 <div class="portfolio__data">
-                  <h3 class="portfolio__title">Twitter Neumorphic Login</h3>
+                  <h3 class="portfolio__title">Tasty Treat</h3>
                   <p class="portfolio__description">
-                    A cool neumorphic twitter login page
+                    An online food delivery Web App built with React JS 
                   </p>
                   <a
-                    href="https://codepen.io/amir1611_/pen/VwppJjq"
+                    href="https://tasty-treat-delivery.netlify.app/home"
                     target="_blank"
                     class="button button--flex button--small portfolio__button"
                   >
