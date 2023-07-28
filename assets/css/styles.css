@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 2343; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 74%, 62%);
@@ -330,7 +330,7 @@ img{
 .typed-out{
     font-size:var(--big-font-size);
     text-align: center;
-    color: hsl(183deg 100% 50%);
+    color: hsl(250deg 74.23% 61.96%);
     text-shadow: 2px 3px black;
     overflow: hidden;
 
@@ -385,7 +385,7 @@ img{
 
 /*==================== BUTTONS ====================*/
 .button{
-    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    background-image: linear-gradient(to right, #b000ff 0%, #383a8f  51%, #4e1cad  100%);
     font-family: var(--body-font);
     font-size: 18px;
     font-weight:var(--font-medium);
