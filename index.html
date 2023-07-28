@@ -1,207 +1,344 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <html oncontextmenu="return false" >
+<html lang="en">
+  <html oncontextmenu="return false">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--==================== ANALYTICS ====================-->
-        <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="09ea1de8-1c90-4c5c-a988-127651781a27" async></script>
-        <script defer src="https://overtracking.com/p/pMX4Q2dRfjsdxrEZ"></script>
+      <!--==================== ICON ====================-->
+      <link rel="icon" type="image/x-icon" href="assets\img\icon.png" />
 
+      <!--==================== UNICONS ====================-->
+      <link
+        rel="stylesheet"
+        href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+      />
 
-        <!--==================== ICON ====================-->
-        <link rel="icon" type="image/x-icon" href="assets\img\icon.png">
+      <!--==================== SWIPER CSS ====================-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-        <!--==================== UNICONS ====================-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+      <!--==================== CSS ====================-->
+      <link rel="stylesheet" href="assets/css/styles.css" />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Raleway"
+      />
 
-        <title>AMIR</title>
+      <!--==================== ANALYTICS ====================-->
+      <script defer src="https://overtracking.com/p/pMX4Q2dRfjsdxrEZ"></script>
+
+      <title>AMIR</title>
     </head>
-    <body class="dark-theme" >
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <h2 class="nav__logo">AMIR</h2>
+    <body class="dark-theme">
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+        <nav class="nav container">
+          <h2 class="nav__logo">AMIR</h2>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class="uil uil-home nav__icon"></i> Home
-                            </a>
-                        </li>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list grid">
+              <li class="nav__item">
+                <a href="#home" class="nav__link active-link">
+                  <i class="uil uil-home nav__icon"></i> Home
+                </a>
+              </li>
 
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> About
-                            </a>
-                        </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">
+                  <i class="uil uil-user nav__icon"></i> About
+                </a>
+              </li>
 
-                        <!-- <li class="nav__item">
+              <!-- <li class="nav__item">
                             <a href="#skills" class="nav__link">
                                 <i class="uil uil-file-alt nav__icon"></i> Skills
                             </a>
                         </li> -->
 
-                        <li class="nav__item">
-                            <a href="#services" class="nav__link">
-                                <i class="uil uil-briefcase-alt nav__icon"></i> Services
-                            </a>
-                        </li>
+              <li class="nav__item">
+                <a href="#services" class="nav__link">
+                  <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                </a>
+              </li>
 
-                        <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-briefcase-alt nav__icon"></i> Portfolio
-                            </a>
-                        </li>
+              <li class="nav__item">
+                <a href="#portfolio" class="nav__link">
+                  <i class="uil uil-briefcase-alt nav__icon"></i> Portfolio
+                </a>
+              </li>
 
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contact
-                            </a>
-                        </li>
-                    </ul>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">
+                  <i class="uil uil-message nav__icon"></i> Contact
+                </a>
+              </li>
+            </ul>
 
-                    <i class="uil uil-times nav__close" id="nav-close"></i>
+            <i class="uil uil-times nav__close" id="nav-close"></i>
+          </div>
+
+          <div class="nav__btns">
+            <!-- Change Theme Button-->
+            <i class="uil uil-moon change-theme" id="theme-button"></i>
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="uil uil-apps"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+          <div class="home__container container grid">
+            <div class="home__content grid">
+              <div class="home__social">
+                <div
+                  class="home__social__buttons"
+                  data-sr-id="3"
+                  style="
+                    visibility: visible;
+                    opacity: 1;
+                    transform: matrix3d(
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1
+                    );
+                    transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0s,
+                      transform 1s cubic-bezier(0.5, 0, 0, 1) 0s;
+                  "
+                >
+                  <a
+                    href="https://twitter.com/amir1611_"
+                    target="_blank"
+                    class="home__social-icon"
+                  >
+                    <i class="uil uil-twitter-alt social--icons"></i>
+                  </a>
                 </div>
 
-                <div class="nav__btns">
-                    <!-- Change Theme Button-->
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
-                    </div>
+                <div
+                  class="home__social__buttons"
+                  data-sr-id="4"
+                  style="
+                    visibility: visible;
+                    opacity: 1;
+                    transform: matrix3d(
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1
+                    );
+                    transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0s,
+                      transform 1s cubic-bezier(0.5, 0, 0, 1) 0s;
+                  "
+                >
+                  <a
+                    href="https://www.instagram.com/amir1611_/"
+                    target="_blank"
+                    class="home__social-icon"
+                  >
+                    <i class="uil uil-instagram-alt social--icons"></i>
+                  </a>
                 </div>
-            </nav>
-        </header>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <div class="home__social__buttons" data-sr-id="3" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0s;">
-                                <a href="https://twitter.com/amir1611_" target="_blank" class="home__social-icon">
-                                    <i class="uil uil-twitter-alt social--icons"></i>
-                                </a>
-                            </div>
-
-                            <div class="home__social__buttons" data-sr-id="4" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0s;">
-                                <a href="https://www.instagram.com/amir1611_/" target="_blank" class="home__social-icon">
-                                    <i class="uil uil-instagram-alt social--icons"></i>
-                                </a>
-                            </div>
-
-                            <div class="home__social__buttons" data-sr-id="5" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0s;">
-                                <a href="https://github.com/amir1611" target="_blank" class="home__social-icon">
-                                    <i class="uil uil-github-alt social--icons"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="home__img">
-                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                <div
+                  class="home__social__buttons"
+                  data-sr-id="5"
+                  style="
+                    visibility: visible;
+                    opacity: 1;
+                    transform: matrix3d(
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1
+                    );
+                    transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0s,
+                      transform 1s cubic-bezier(0.5, 0, 0, 1) 0s;
+                  "
+                >
+                  <a
+                    href="https://github.com/amir1611"
+                    target="_blank"
+                    class="home__social-icon"
+                  >
+                    <i class="uil uil-github-alt social--icons"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="home__img">
+                <svg
+                  class="home__blob"
+                  viewBox="0 0 200 187"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <mask id="mask0" mask-type="alpha">
+                    <path
+                      d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                                     130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                                     97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                    />
+                  </mask>
+                  <g mask="url(#mask0)">
+                    <path
+                      d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home__blob-img" x='12' y='-25'xlink:href="assets/img/portraitremovebg.png"/>
-                                </g>
-                            </svg>
-                        </div>
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                    />
+                    <image
+                      class="home__blob-img"
+                      x="12"
+                      y="-25"
+                      xlink:href="assets/img/portraitremovebg.png"
+                    />
+                  </g>
+                </svg>
+              </div>
 
-                        <div class="home__data">
-                            <div class="container-typed-out"><h1 class="typed-out">Hey, I'm Amir</h1></div>
-                        
-                            <h3 class="home__subtitle">Web/Mobile Developer <br>& <br>Data Evangelist </h3>
-                            <p class="home__description">An aspiring developer with an avid passion on combining data, design and development onto solving real-life problems</p>
-                            <div style="text-align:center;" class="home_contactme__button">
-                                <a href="#contact" class="button button--flex"">
-                                    Contact Me  <i class="uil uil-message button__icon"></i>
-                                 </a>
-                            </div>
-                            
-                        </div>
-                    </div>
-
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll down</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                        </a>
-                    </div>
+              <div class="home__data">
+                <div class="container-typed-out">
+                  <h1 class="typed-out">Hey, I'm Amir</h1>
                 </div>
-            </section>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <div class="about__title">
-                    <h2 class="section__title">About Me</h2>
-                    <span class="section__subtitle">An Introduction</span>
+                <h3 class="home__subtitle">
+                  Web/Mobile Developer <br />& <br />Data Evangelist
+                </h3>
+                <p class="home__description">
+                  An aspiring developer with an avid passion on combining data,
+                  design and development onto solving real-life problems
+                </p>
+                <div style="text-align: center" class="home_contactme__button">
+                  <a href="#contact" class="button button--flex">
+                    Contact Me <i class="uil uil-message button__icon"></i>
+                  </a>
                 </div>
-                
+              </div>
+            </div>
 
-                <div style="pointer-events: none;" class="about__container container grid">
-                    <img src="assets/img/amiraws.jpg" alt="Amir flexing in AWS Malaysia Office" class="about__img">
+            <div class="home__scroll">
+              <a href="#about" class="home__scroll-button button--flex">
+                <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                <span class="home__scroll-name">Scroll down</span>
+                <i class="uil uil-arrow-down home__scroll-arrow"></i>
+              </a>
+            </div>
+          </div>
+        </section>
 
-                    <div class="about__data">
-                        <br><p class="about__description">Naturally inquisitive, I love helping and working together with others. I will lead by example to analyse and uncover insights, adding value to every aspect I can and making a meaningful impact in what I do!</p>
-                        <div class="about__info">
-                            <div>
-                                <span class="about__info-title">05+</span>
-                                <span class="about__info-name">Years <br> experience</span>
-                            </div>
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+          <div class="about__title">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">An Introduction</span>
+          </div>
 
-                            <div>
-                                <span class="about__info-title">10+</span>
-                                <span class="about__info-name">Projects <br> Done</span>
-                            </div>
+          <div
+            style="pointer-events: none"
+            class="about__container container grid"
+          >
+            <img
+              src="assets/img/amiraws.jpg"
+              alt="Amir flexing in AWS Malaysia Office"
+              class="about__img"
+            />
 
-                            <div>
-                                <span class="about__info-title">1000+</span>
-                                <span class="about__info-name">Hours <br> worked</span>
-                            </div>
-                        </div>
+            <div class="about__data">
+              <br />
+              <p class="about__description">
+                Naturally inquisitive, I love helping and working together with
+                others. I will lead by example to analyse and uncover insights,
+                adding value to every aspect I can and making a meaningful
+                impact in what I do!
+              </p>
+              <div class="about__info">
+                <div>
+                  <span class="about__info-title">05+</span>
+                  <span class="about__info-name"
+                    >Years <br />
+                    experience</span
+                  >
+                </div>
 
-                        <!-- <div class="about__buttons">
+                <div>
+                  <span class="about__info-title">10+</span>
+                  <span class="about__info-name"
+                    >Projects <br />
+                    Done</span
+                  >
+                </div>
+
+                <div>
+                  <span class="about__info-title">1000+</span>
+                  <span class="about__info-name"
+                    >Hours <br />
+                    worked</span
+                  >
+                </div>
+              </div>
+
+              <!-- <div class="about__buttons">
                             <a download="" href="assets/pdf/" class="button button--flex">
                             Download Resume <i class="uil uil-import button__icon"></i>
                             </a>
                         </div> -->
-                    </div>
-                </div>
-        
-            </section>
+            </div>
+          </div>
+        </section>
 
-            <!--==================== SKILLS ====================-->
-            <!-- <section class="skills section" id="skills"> -->
-                <!-- <div class="skills__title">
+        <!--==================== SKILLS ====================-->
+        <!-- <section class="skills section" id="skills"> -->
+        <!-- <div class="skills__title">
                     <h2 class="section__title">Skills</h2>
                     <span class="section__subtitle">My technical skills</span>
                 </div>
                  -->
 
-                <!-- <div class="skills__container container grid">
+        <!-- <div class="skills__container container grid">
                     <div> -->
-                        <!--==================== SKILLS 1====================-->
-                        <!-- <div class="skills__content skills__open">
+        <!--==================== SKILLS 1====================-->
+        <!-- <div class="skills__content skills__open">
                             <div class="skills__header">
                                 <i class="uil uil-brackets-curly skills__icon"></i>
 
@@ -277,8 +414,8 @@
                         </div>
                         </div> -->
 
-                        <!--==================== SKILLS 2====================-->
-                        <!-- <div class="skills__content skills__close">
+        <!--==================== SKILLS 2====================-->
+        <!-- <div class="skills__content skills__close">
                             <div class="skills__header">
                                 <i class="uil uil-mobile-android skills__icon"></i>
 
@@ -289,7 +426,7 @@
                                 <i class="uil uil-angle-down skills__arrow"></i>
                             </div> -->
 
-                        <!-- <div class="skills__list grid">
+        <!-- <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Flutter</h3>
@@ -313,9 +450,9 @@
                         </div>
                     </div> -->
 
-                    <!-- <div> -->
-                        <!--==================== SKILLS 3====================-->
-                        <!-- <div class="skills__content skills__close">
+        <!-- <div> -->
+        <!--==================== SKILLS 3====================-->
+        <!-- <div class="skills__content skills__close">
                             <div class="skills__header">
                                 <i class="uil uil-swatchbook skills__icon"></i>
 
@@ -359,8 +496,8 @@
                         </div>
                         </div> -->
 
-                        <!--==================== SKILLS 4====================-->
-                        <!-- <div class="skills__content skills__close">
+        <!--==================== SKILLS 4====================-->
+        <!-- <div class="skills__content skills__close">
                             <div class="skills__header">
                                 <i class="uil uil-cloud-database-tree skills__icon"></i>
 
@@ -398,265 +535,321 @@
                 </div>
             </section> -->
 
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+          <div class="services__title">
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">What I can offer you</span>
+          </div>
 
+          <div class="services__container container grid">
+            <!--==================== SERVICES 1 ====================-->
+            <div class="services__content">
+              <div>
+                <i class="uil uil-web-grid-alt services__icon"></i>
+                <h3 class="services__title">Web Development</h3>
+              </div>
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                <div class="services__title">
-                    <h2 class="section__title">Services</h2>
-                    <span class="section__subtitle">What I can offer you</span>
+              <span
+                class="button button--flex button--small button--link services__button"
+              >
+                ㅤView More
+                <i class="uil uil-arrow-right button__icon"></i>
+              </span>
+
+              <div class="services__modal">
+                <div class="services__modal-content">
+                  <h4 class="services__modal-title">
+                    Web <br />
+                    Development
+                  </h4>
+                  <i class="uil uil-times services__modal-close"></i>
+
+                  <ul class="services__modal-services grid">
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle services__modal-icon"></i>
+                      <p>Develop a scalable web Applications</p>
+                    </li>
+
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle services__modal-icon"></i>
+                      <p>Develop content management systems (CMS)</p>
+                    </li>
+
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle services__modal-icon"></i>
+                      <p>Optimize website speed and performance</p>
+                    </li>
+                  </ul>
                 </div>
-                
+              </div>
+            </div>
 
-                <div class="services__container container grid">
-                    <!--==================== SERVICES 1 ====================-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-web-grid-alt services__icon"></i>
-                            <h3 class="services__title">Web Development</h3>
-                        </div>
+            <!--==================== SERVICES 2====================-->
+            <div class="services__content">
+              <div>
+                <i class="uil uil-selfie services__icon"></i>
+                <h3 class="services__title">Mobile App Development</h3>
+              </div>
 
-                        <span class="button button--flex button--small button--link services__button">
-                            ㅤView More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
+              <span
+                class="button button--flex button--small button--link services__button"
+              >
+                ㅤView More
+                <i class="uil uil-arrow-right button__icon"></i>
+              </span>
 
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Web <br> Development</h4>
-                                <i class="uil uil-times services__modal-close"></i>
+              <div class="services__modal">
+                <div class="services__modal-content">
+                  <h4 class="services__modal-title">Mobile App Development</h4>
+                  <i class="uil uil-times services__modal-close"></i>
 
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Write the code that makes a website function, whether they work on the front end or back end (server-side)</p>
-                                    </li>
+                  <ul class="services__modal-services grid">
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle services__modal-icon"></i>
+                      <p>
+                        iOS App Development - Seamless cross-platform
+                        experiences
+                      </p>
+                    </li>
 
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Create or implement designs demanded by a client or created by a design team</p>
-                                    </li>
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle services__modal-icon"></i>
+                      <p>Android Mobile Apps - Specialized in Flutter, Dart</p>
+                    </li>
 
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Aesthetics & Performance is my forte!</p>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==================== SERVICES 2====================-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-selfie services__icon"></i>
-                            <h3 class="services__title">Mobile App Development</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            ㅤView More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Mobile App Development</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Mobile Applications creation in the palm of my hands (literally)!</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Android Mobile Apps - Specialized in Flutter, Dart</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==================== SERVICES 3 ====================-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-graph-bar services__icon"></i>
-                            <h3 class="services__title">Data Science & Analytics</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            ㅤView More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Data Science & Analytics</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Uncovering insights & solutions to your business needs and decisions</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Analytics & Visualisation</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Complex problem solving & Recommendations</p>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==================== SERVICES 4 ====================-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-cloud-database-tree services__icon"></i>
-                            <h3 class="services__title">Cloud Database</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            ㅤView More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Cloud Database</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Simplify migrations to Cloud SQL from MySQL and PostgreSQL</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Real-time device-cloud synergy</p>
-                                    </li>
-
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>High security and reliability</p>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle services__modal-icon"></i>
+                      <p>
+                        Security and Data Protection - Safeguard user
+                        information
+                      </p>
+                    </li>
+                  </ul>
                 </div>
-            </section>
+              </div>
+            </div>
 
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                <div class="portfolio__subject">
-                    <h2 class="section__title">Portfolio</h2>
-                    <span class="section__subtitle">My recent projects</span>
+            <!--==================== SERVICES 3 ====================-->
+            <div class="services__content">
+              <div>
+                <i class="uil uil-graph-bar services__icon"></i>
+                <h3 class="services__title">Data Science & Analytics</h3>
+              </div>
+
+              <span
+                class="button button--flex button--small button--link services__button"
+              >
+                ㅤView More
+                <i class="uil uil-arrow-right button__icon"></i>
+              </span>
+
+              <div class="services__modal">
+                <div class="services__modal-content">
+                  <h4 class="services__modal-title">
+                    Data Science & Analytics
+                  </h4>
+                  <i class="uil uil-times services__modal-close"></i>
+
+                  <ul class="services__modal-services grid">
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle services__modal-icon"></i>
+                      <p>
+                        Uncovering insights & solutions to your business needs
+                        and decisions
+                      </p>
+                    </li>
+
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle services__modal-icon"></i>
+                      <p>Analytics & Visualisation</p>
+                    </li>
+
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle services__modal-icon"></i>
+                      <p>Complex problem solving & Recommendations</p>
+                    </li>
+                  </ul>
                 </div>
-                
+              </div>
+            </div>
 
-                <div class="portfolio__container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <!--==================== PORTFOLIO 1====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/reportthing_thumbnail.png" alt="" class="portfolio__img">
-                           <div class="portfolio__data">
-                               <h3 class="portfolio__title">YAYASAN PENDIDIKAN RAKYAT</h3>
-                               <p class="portfolio__description">An Intuitive Education Foundation To Provide Assistance For Students.</p>
-                               <a href="https://www.pendidikan.org.my/" target="_blank" class="button button--flex button--small portfolio__button">
-                                Demo 
-                                <i class="uil uil-arrow-right button__icon"></i>
-                               </a>
-                           </div>
-                       </div>
-                         <!--==================== PORTFOLIO 2====================-->
-                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/cryptodashboard.png" alt="" class="portfolio__img">
-                       <div class="portfolio__data">
-                           <h3 class="portfolio__title">Simple Crypto Dashboard</h3>
-                           <p class="portfolio__description">Simple Crypto Dashboard app using React and CoinGecko API.</p>
-                           <a href="https://cgcrypto-dashboard.vercel.app/" target="_blank" class="button button--flex button--small portfolio__button">
-                            Demo
-                            <i class="uil uil-arrow-right button__icon"></i>
-                           </a>
-                       </div>
-                            
-                        </div>
+            <!--==================== SERVICES 4 ====================-->
+            <div class="services__content">
+              <div>
+                <i class="uil uil-cloud-database-tree services__icon"></i>
+                <h3 class="services__title">Cloud Database</h3>
+              </div>
 
-                        
+              <span
+                class="button button--flex button--small button--link services__button"
+              >
+                ㅤView More
+                <i class="uil uil-arrow-right button__icon"></i>
+              </span>
 
-                       <!--==================== PORTFOLIO 3====================-->
-                       <div class="portfolio__content grid swiper-slide">
-                        <img src="assets\img\todo.png" alt="" class="portfolio__img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">ToDo List</h3>
-                            <p class="portfolio__description">A Simple ToDo list Web App built using vue.js</p>
-                            <a href="https://stellular-twilight-827e82.netlify.app/" target="_blank"  class="button button--flex button--small portfolio__button">
-                                Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                   </div>
+              <div class="services__modal">
+                <div class="services__modal-content">
+                  <h4 class="services__modal-title">Cloud Database</h4>
+                  <i class="uil uil-times services__modal-close"></i>
 
-                   <!--==================== PORTFOLIO 4====================-->
-                   <div class="portfolio__content grid swiper-slide">
-                    <img src="assets/img/portfolio4.png" alt="" class="portfolio__img">
-                   <div class="portfolio__data">
-                       <h3 class="portfolio__title">Twitter Neumorphic Login</h3>
-                       <p class="portfolio__description">A cool neumorphic twitter login page </p>
-                       <a href="https://codepen.io/amir1611_/pen/VwppJjq"  target="_blank" class="button button--flex button--small portfolio__button">
-                        Demo
-                        <i class="uil uil-arrow-right button__icon"></i>
-                       </a>
-                   </div>
-               </div>
-                    </div>
+                  <ul class="services__modal-services grid">
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle services__modal-icon"></i>
+                      <p>
+                        Simplify migrations to Cloud SQL from MySQL and
+                        PostgreSQL
+                      </p>
+                    </li>
 
-                    <!-- Add arrows-->
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-pagination"></div>
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle services__modal-icon"></i>
+                      <p>Real-time device-cloud synergy</p>
+                    </li>
+
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle services__modal-icon"></i>
+                      <p>High security and reliability</p>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            </section>
-            
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+          <div class="portfolio__subject">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">My recent projects</span>
+          </div>
 
-    <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
-                <div class="project__bg">
-                    <div class="project__container container grid">
-                        <div class="project__data">
-                            <h2 class="project__title">Have a project in mind?</h2>
-                            <p class="project__description">Contact me to get started on your project!</p>
-                            <a href="#contact" class="button button--flex button--white">
-                                Contact Me
-                                <i class="uil uil-message project__icon button__icon"></i>
-                            </a>
-                        </div>
-
-                        <img src="assets\img\contactMe.svg" alt="" class="project__img"> 
-                        <br>
-                    </div>
+          <div class="portfolio__container container swiper-container">
+            <div class="swiper-wrapper">
+              <!--==================== PORTFOLIO 1====================-->
+              <div class="portfolio__content grid swiper-slide">
+                <img
+                  src="assets/img/reportthing_thumbnail.png"
+                  alt=""
+                  class="portfolio__img"
+                />
+                <div class="portfolio__data">
+                  <h3 class="portfolio__title">YAYASAN PENDIDIKAN RAKYAT</h3>
+                  <p class="portfolio__description">
+                    An Intuitive Education Foundation To Provide Assistance For
+                    Students.
+                  </p>
+                  <a
+                    href="https://www.pendidikan.org.my/"
+                    target="_blank"
+                    class="button button--flex button--small portfolio__button"
+                  >
+                    Demo
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
                 </div>
+              </div>
+              <!--==================== PORTFOLIO 2====================-->
+              <div class="portfolio__content grid swiper-slide">
+                <img
+                  src="assets/img/cryptodashboard.png"
+                  alt=""
+                  class="portfolio__img"
+                />
+                <div class="portfolio__data">
+                  <h3 class="portfolio__title">Simple Crypto Dashboard</h3>
+                  <p class="portfolio__description">
+                    Simple Crypto Dashboard app using React and CoinGecko API.
+                  </p>
+                  <a
+                    href="https://cgcrypto-dashboard.vercel.app/"
+                    target="_blank"
+                    class="button button--flex button--small portfolio__button"
+                  >
+                    Demo
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                </div>
+              </div>
 
-            </section>
+              <!--==================== PORTFOLIO 3====================-->
+              <div class="portfolio__content grid swiper-slide">
+                <img src="assets\img\todo.png" alt="" class="portfolio__img" />
+                <div class="portfolio__data">
+                  <h3 class="portfolio__title">ToDo List</h3>
+                  <p class="portfolio__description">
+                    A Simple ToDo list Web App built using vue.js
+                  </p>
+                  <a
+                    href="https://stellular-twilight-827e82.netlify.app/"
+                    target="_blank"
+                    class="button button--flex button--small portfolio__button"
+                  >
+                    Demo
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                </div>
+              </div>
 
-            <!--==================== TESTIMONIAL ====================-->
-            <!-- <section class="testimonial section">
+              <!--==================== PORTFOLIO 4====================-->
+              <div class="portfolio__content grid swiper-slide">
+                <img
+                  src="assets/img/portfolio4.png"
+                  alt=""
+                  class="portfolio__img"
+                />
+                <div class="portfolio__data">
+                  <h3 class="portfolio__title">Twitter Neumorphic Login</h3>
+                  <p class="portfolio__description">
+                    A cool neumorphic twitter login page
+                  </p>
+                  <a
+                    href="https://codepen.io/amir1611_/pen/VwppJjq"
+                    target="_blank"
+                    class="button button--flex button--small portfolio__button"
+                  >
+                    Demo
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add arrows-->
+            <div class="swiper-button-next">
+              <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+
+        <!--==================== PROJECT IN MIND ====================-->
+        <section class="project section">
+          <div class="project__bg">
+            <div class="project__container container grid">
+              <div class="project__data">
+                <h2 class="project__title">Have a project in mind?</h2>
+                <p class="project__description">
+                  Contact me to get started on your project!
+                </p>
+                <a href="#contact" class="button button--flex button--white">
+                  Contact Me
+                  <i class="uil uil-message project__icon button__icon"></i>
+                </a>
+              </div>
+
+              <img src="assets\img\contactMe.svg" alt="" class="project__img" />
+              <br />
+            </div>
+          </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <!-- <section class="testimonial section">
                 <div class="testimonial__subject">
                     <h2 class="section__title">Testimonials</h2>
                     <span class="section__subtitle">Friends & Mutuals sayings</span>
@@ -666,10 +859,10 @@
                 <h3 class="section__subtitle">( Coming soon! )</h3>
 
                 <!--NO TESTIMONIALS YET, ADD WHEN HAVE! - 26 JUNE 2022 AMIR -->
-                <!-- <div class="testimonial__container container swiper-container">
+        <!-- <div class="testimonial__container container swiper-container">
                     <div class="swiper-wrapper">  -->
-                         <!--==================== TESTIMONIAL 1====================-->
-                         <!-- <div class="testimonial__content swiper-slide">
+        <!--==================== TESTIMONIAL 1====================-->
+        <!-- <div class="testimonial__content swiper-slide">
                              <div class="testimonial__data">
                                  <div class="testimonial__header">
                                      <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__img">
@@ -694,8 +887,8 @@
 
                          </div> -->
 
-                          <!--==================== TESTIMONIAL 2====================-->
-                          <!-- <div class="testimonial__content swiper-slide">
+        <!--==================== TESTIMONIAL 2====================-->
+        <!-- <div class="testimonial__content swiper-slide">
                             <div class="testimonial__data">
                                 <div class="testimonial__header">
                                     <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
@@ -720,8 +913,8 @@
                             
                         </div> -->
 
-                         <!--==================== TESTIMONIAL 3====================-->
-                         <!-- <div class="testimonial__content swiper-slide">
+        <!--==================== TESTIMONIAL 3====================-->
+        <!-- <div class="testimonial__content swiper-slide">
                             <div class="testimonial__data">
                                 <div class="testimonial__header">
                                     <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__img">
@@ -745,32 +938,31 @@
                             </p>
                             
                         </div> -->
-                    <!-- </div>
+        <!-- </div>
                     <div class="swiper-pagination swiper-pagination-testimonial"></div>
                 </div> -->
 
-            <!-- </section> -->
+        <!-- </section> -->
 
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-                <div class="contact__subject">
-                    <h2 class="section__title">Contact Me!</h2>
-                    <span class="section__subtitle">Hit me up!</span>
-                </div>  
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+          <div class="contact__subject">
+            <h2 class="section__title">Contact Me!</h2>
+            <span class="section__subtitle">Hit me up!</span>
+          </div>
 
-                <div class="contact__container container grid">
-                    <div>
-                        
-                        <div class="contact__information">
-                            <i class="uil uil-envelope contact__icon"></i>
+          <div class="contact__container container grid">
+            <div>
+              <div class="contact__information">
+                <i class="uil uil-envelope contact__icon"></i>
 
-                            <div>
-                                <h3 class="contact__title">Email</h3>
-                                <span class="contact__subtitle">amir@omg.lol</span>
-                            </div>
-                        </div>
-                        
-                        <!-- 
+                <div>
+                  <h3 class="contact__title">Email</h3>
+                  <span class="contact__subtitle">amir@omg.lol</span>
+                </div>
+              </div>
+
+              <!-- 
                         <div class="contact__information">
                             <i class="uil uil-map-marker contact__icon"></i>
 
@@ -779,57 +971,82 @@
                                 <span class="contact__subtitle"></span>
                             </div>
                         </div> -->
+            </div>
 
-                    </div>
-
-                    <form action="https://formsubmit.co/amir@omg.lol" method="POST" class="contact__form grid">
-                        <div class="contact__inputs grid" style="font-weight: bold; ">
-                            <input type="hidden" name="_subject" value="Project Idea!">
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
-                                <input type="text" name="name" class="contact__input" required>
-                            </div>
-
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" name="email" class="contact__input" required>
-                            </div>
-
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Project</label>
-                                <input type="text" name="project" class="contact__input">
-                            </div>
-
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Message</label>
-                                <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
-                            </div>
-
-                            <div style="text-align: center;" class="contact_sendmessage_button">
-                                <button type="submit" class="button button--flex">
-                                    Send Message
-                                    <i class="uil uil-message button__icon"></i>
-                                </button>
-                            </div>
-
-                        </div>
-                    </form>
+            <form
+              action="https://formsubmit.co/amir@omg.lol"
+              method="POST"
+              class="contact__form grid"
+            >
+              <div class="contact__inputs grid" style="font-weight: bold">
+                <input type="hidden" name="_subject" value="Project Idea!" />
+                <div class="contact__content">
+                  <label for="" class="contact__label">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="contact__input"
+                    required
+                  />
                 </div>
 
-            </section>
-        </main>
+                <div class="contact__content">
+                  <label for="" class="contact__label">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="contact__input"
+                    required
+                  />
+                </div>
 
-        <!--==================== FOOTER ====================-->
+                <div class="contact__content">
+                  <label for="" class="contact__label">Project</label>
+                  <input type="text" name="project" class="contact__input" />
+                </div>
+
+                <div class="contact__content">
+                  <label for="" class="contact__label">Message</label>
+                  <textarea
+                    name="message"
+                    id=""
+                    cols="0"
+                    rows="7"
+                    class="contact__input"
+                  ></textarea>
+                </div>
+
+                <div
+                  style="text-align: center"
+                  class="contact_sendmessage_button"
+                >
+                  <button type="submit" class="button button--flex">
+                    Send Message
+                    <i class="uil uil-message button__icon"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
         <footer class="footer">
-            <footer class="footer">
-                <div class="footer__bg">
-                    <div style="text-align: center;" class="footer__container container grid">
-                        <div>
-                            <h1 class="footer__title">AMIR</h1>
-                            <span class="footer__subtitle">Web/Mobile Developer &amp; Data Evangelist </span>
-                        </div>
+          <div class="footer__bg">
+            <div
+              style="text-align: center"
+              class="footer__container container grid"
+            >
+              <div>
+                <h1 class="footer__title">AMIR</h1>
+                <span class="footer__subtitle"
+                  >Web/Mobile Developer &amp; Data Evangelist
+                </span>
+              </div>
 
-                        <!-- <ul class="footer__links">
+              <!-- <ul class="footer__links">
                             <li>
                                 <a href="#services" class="footer__link">Services</a>
                             </li>
@@ -844,52 +1061,73 @@
 
                         </ul> -->
 
-                        <div class="footer__socials">
-                            <a href="https://twitter.com/amir1611_" target="_blank" class="footer__social">
-                                <i class="uil uil-twitter-alt"></i>
-                            </a>
+              <div class="footer__socials">
+                <a
+                  href="https://twitter.com/amir1611_"
+                  target="_blank"
+                  class="footer__social"
+                >
+                  <i class="uil uil-twitter-alt"></i>
+                </a>
 
-                            <a href="https://www.instagram.com/amir1611_/" target="_blank" class="footer__social">
-                                <i class="uil uil-instagram-alt"></i>
-                            </a>
+                <a
+                  href="https://www.instagram.com/amir1611_/"
+                  target="_blank"
+                  class="footer__social"
+                >
+                  <i class="uil uil-instagram-alt"></i>
+                </a>
 
-                             
-                            <a href="https://www.facebook.com/amir1611/" target="_blank" class="footer__social">
-                                <i class="uil uil-facebook-f social--icons"></i>
-                            </a>
+                <a
+                  href="https://www.facebook.com/amir1611/"
+                  target="_blank"
+                  class="footer__social"
+                >
+                  <i class="uil uil-facebook-f social--icons"></i>
+                </a>
 
-                            <a href="https://github.com/amir1611" target="_blank" class="footer__social">
-                                <i class="uil uil-github-alt"></i>
-                            </a>
+                <a
+                  href="https://github.com/amir1611"
+                  target="_blank"
+                  class="footer__social"
+                >
+                  <i class="uil uil-github-alt"></i>
+                </a>
 
-                            <a href="https://open.spotify.com/playlist/21m7fm7AT2QUO6VswSkOwD?si=0dee1c3a6bcd4bf9" target="_blank" class="footer__social">
-                                <img src="assets\img\spotify.png" width="18" >
-                            </a>
+                <a
+                  href="https://open.spotify.com/playlist/21m7fm7AT2QUO6VswSkOwD?si=0dee1c3a6bcd4bf9"
+                  target="_blank"
+                  class="footer__social"
+                >
+                  <img src="assets\img\spotify.png" width="18" />
+                </a>
+              </div>
+            </div>
 
-                        </div>
-                    </div>
-
-                    <p class="footer__copy">Copyright © 2023 Amir Tech Solutions. All rights reserved. 
-                        <br> <a style="color:#38f5ff;" href="privacypolicy.html">Privacy Policyㅤㅤㅤ</a> <a style="color:#38f5ff;" href="legalnotice.html">Legal Notice</a>
-                    </p>
-                    
-                </div>
-            </footer>
-            
+            <p class="footer__copy">
+              Copyright © 2023 Amir Tech Solutions. All rights reserved. <br />
+              <a style="color: #38f5ff" href="privacypolicy.html"
+                >Privacy Policyㅤㅤㅤ</a
+              >
+              <a style="color: #38f5ff" href="legalnotice.html">Legal Notice</a>
+            </p>
+          </div>
         </footer>
+      </footer>
 
-        <!--==================== SCROLL REVEAL ==================-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-        
-        <!--==================== SCROLL TOP ====================-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup__icon"></i>
-        </a>
+      <!--==================== SCROLL REVEAL ==================-->
+      <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!--==================== SWIPER JS ====================-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
+      <!--==================== SCROLL TOP ====================-->
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+      </a>
 
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
+      <!--==================== SWIPER JS ====================-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <!--==================== MAIN JS ====================-->
+      <script src="assets/js/main.js"></script>
     </body>
+  </html>
 </html>

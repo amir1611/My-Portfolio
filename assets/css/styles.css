@@ -693,7 +693,7 @@ img{
     background-color: var(--container-color);
     padding:0rem 0 1rem 1.5rem;
     border-radius: .25rem;
-    box-shadow: 5px 8px 4px rgb(36 173 160 / 19%);
+    box-shadow: 5px 8px 4px rgb(92 36 173 / 46%);
     transition:.3s;
 }
 
