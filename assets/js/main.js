@@ -19,6 +19,9 @@ if(navClose){
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
 
+//PRINT IN CONSOLE LOG
+console.log("%cWhat are you looking for huh ", "font: 20px; font-family: monospace; font-weight: bold; background: #a4a4a4; color: #000; padding: 4px 12px");
+
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
