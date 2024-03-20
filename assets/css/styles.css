@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 3345; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 74%, 62%);
@@ -330,7 +330,7 @@ img{
 .typed-out{
     font-size:var(--big-font-size);
     text-align: center;
-    color: hsl(250deg 74.23% 61.96%);
+    color: hsl(130.67deg 74.23% 61.96%);
     text-shadow: 2px 3px black;
     overflow: hidden;
 
@@ -385,7 +385,8 @@ img{
 
 /*==================== BUTTONS ====================*/
 .button{
-    background-image: linear-gradient(to right, #b000ff 0%, #383a8f  51%, #4e1cad  100%);
+    
+    background-image: linear-gradient(to right, #134E5E 0%, #71B280  51%, #134E5E  100%);
     font-family: var(--body-font);
     font-size: 18px;
     font-weight:var(--font-medium);
@@ -693,7 +694,7 @@ img{
     background-color: var(--container-color);
     padding:0rem 0 1rem 1.5rem;
     border-radius: .25rem;
-    box-shadow: 5px 8px 4px rgb(92 36 173 / 46%);
+    box-shadow: 5px 8px 4px rgba(36, 173, 41, 0.46);
     transition:.3s;
 }
 
@@ -796,7 +797,7 @@ img{
     width:265px;
     border-radius: .5rem;
     justify-self: center;
-    border: 1px solid #4d00ff
+    border: 1px solid #2bff00
 }
 
 .portfolio__title{
@@ -849,7 +850,7 @@ img{
 }
 
 .project__bg{
-    background-color: HSL(266deg 32% 8%);
+    background-color:  var(--first-color);
     padding-top:3rem;
     padding-top: 1rem;
     border-radius: 1.5rem;
@@ -868,7 +869,7 @@ img{
 
 .project__title,
 .project__description{
-    color: #FFF;
+    color: #000000;
 }
 
 .project__img{
@@ -948,7 +949,7 @@ img{
 
 .contact__content{
     background-color: var(--input-color);
-    box-shadow: 5px 8px 4px rgb(61 7 117 / 54%);
+    box-shadow: 5px 8px 4px rgb(17 117 7 / 54%);
     border-radius: .5rem;
     padding: .75rem 1rem .25rem;
 }
@@ -983,7 +984,7 @@ textarea{
 }
 
 .footer__bg{
-    background-color: hsl(254.54deg 65.22% 9.07%);
+    background-color: hsl(151.62deg 65.22% 9.07%);
     padding:2rem 0 3rem;
 }
 
@@ -1311,7 +1312,7 @@ textarea{
     }
 
     .project__container{
-        background-color: HSL(255deg 32% 8%);
+        background-color: var(--first-color);
         border-radius: 1rem;
         padding: 3rem 2.5rem 0;
         grid-template-columns: 1fr max-content;
