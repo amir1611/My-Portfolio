@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Building Subscription Payments for Southeast Asian Merchants | Amir Ali</title>
+  <meta name="description" content="Lessons learned from designing recurring billing systems in a market with unique payment behaviors across Southeast Asia." />
+  <meta name="author" content="Amir Ali" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://amirali.netlify.app/articles/subscription-payments.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://amirali.netlify.app/articles/subscription-payments.html" />
+  <meta property="og:title" content="Building Subscription Payments for Southeast Asian Merchants" />
+  <meta property="og:description" content="Lessons learned from designing recurring billing systems in a market with unique payment behaviors across Southeast Asia." />
+  <meta property="og:image" content="https://amirali.netlify.app/assets/img/og-preview.png" />
+  <meta property="og:site_name" content="Amir Ali – Product Manager" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Building Subscription Payments for Southeast Asian Merchants" />
+  <meta name="twitter:description" content="Lessons learned from designing recurring billing systems in a market with unique payment behaviors across Southeast Asia." />
+  <meta name="twitter:image" content="https://amirali.netlify.app/assets/img/og-preview.png" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <header id="header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav__logo">amir<span>.</span></a>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="article-page">
+    <div class="container">
+      <a href="../index.html#articles" class="article-page__back"><i class="fa-solid fa-arrow-left"></i> Back to articles</a>
+
+      <span class="article-page__tag">FinTech</span>
+      <h1 class="article-page__title">Building Subscription Payments for Southeast Asian Merchants</h1>
+      <div class="article-page__meta">
+        <span><i class="fa-regular fa-user"></i> Amir Ali</span>
+        <span><i class="fa-regular fa-calendar"></i> February 2026</span>
+        <span><i class="fa-regular fa-clock"></i> 7 min read</span>
+      </div>
+
+      <div class="article-page__body">
+        <p>Recurring billing is a solved problem in Western markets. Stripe, Chargebee, and dozens of other platforms make it trivially easy to set up subscriptions. But in Southeast Asia, the landscape is fundamentally different, and building Paydee Link taught me just how much context matters in product development.</p>
+
+        <h2>The SEA Payments Landscape</h2>
+        <p>Southeast Asian payment behavior doesn't follow Silicon Valley assumptions. Credit card penetration in Malaysia hovers around 20-30%. E-wallets are fragmented across providers. Bank transfers remain the dominant payment method for many B2B transactions.</p>
+        <p>When we set out to build subscription payments at Paydee, we couldn't simply copy what Stripe does. We had to rethink the entire model from the merchant's perspective.</p>
+
+        <h2>Key Challenges We Faced</h2>
+
+        <h3>1. Billing Cycle Complexity</h3>
+        <p>Malaysian merchants often operate on non-standard billing cycles. Some bill on the Islamic calendar. Others want billing aligned to payroll cycles. We had to design a flexible billing engine that could handle weekly, monthly, quarterly, and custom cycles while remaining simple for the average merchant to configure.</p>
+
+        <h3>2. Payment Method Diversity</h3>
+        <p>A subscription system that only accepts credit cards would exclude the majority of potential customers. We integrated with Card Zone gateway for card payments, but also had to support FPX (Malaysia's bank transfer system) and plan for e-wallet integrations.</p>
+
+        <h3>3. Failed Payment Recovery</h3>
+        <p>In markets with lower card penetration, failed payments are more common. We built smart retry logic that considers local banking patterns, such as avoiding retries during weekends when certain bank systems have maintenance windows.</p>
+
+        <blockquote><p>The best payment product isn't the one with the most features. It's the one that converts the most transactions in your specific market.</p></blockquote>
+
+        <h2>What Worked</h2>
+        <p>Several decisions proved critical to Paydee Link's success:</p>
+        <ul>
+          <li><strong>Merchant-first onboarding:</strong> We designed the setup flow so merchants could create their first subscription plan in under 5 minutes, with sensible defaults for the Malaysian market</li>
+          <li><strong>Transparent pricing display:</strong> We helped merchants generate compliant pricing pages that clearly showed GST/SST breakdowns, which built trust with end customers</li>
+          <li><strong>Dunning management:</strong> Our automated failed-payment communication sequence recovered 40% of initially failed transactions</li>
+          <li><strong>API-first architecture:</strong> While we provided a no-code dashboard, we ensured every feature was available via API for merchants with custom integrations</li>
+        </ul>
+
+        <h2>Lessons for PMs Building in Emerging Markets</h2>
+        <p>Building Paydee Link reinforced several principles that I believe apply to any PM working in emerging markets:</p>
+        <ol>
+          <li><strong>Don't copy Western products blindly.</strong> Understand local payment behaviors, regulations, and cultural norms first. What works in San Francisco often doesn't work in Kuala Lumpur.</li>
+          <li><strong>Talk to merchants, not just end users.</strong> In B2B payments, your merchant's experience is just as important as their customer's experience. A confused merchant won't onboard, no matter how good the checkout flow is.</li>
+          <li><strong>Regulatory compliance is a feature.</strong> In FinTech, compliance isn't overhead. It's a competitive advantage. Merchants trust platforms that handle regulatory complexity for them.</li>
+          <li><strong>Start narrow, then expand.</strong> We launched with basic recurring card payments for Malaysian merchants only. Once that was working well, we expanded to other payment methods and use cases.</li>
+        </ol>
+
+        <p>The subscription economy is growing rapidly in Southeast Asia, but the infrastructure needs to be built differently than in more mature markets. For PMs entering this space, the key is to deeply understand local context before designing solutions.</p>
+      </div>
+
+      <div class="article-page__footer">
+        <div class="article-page__author">
+          <div class="article-page__author-avatar"><i class="fa-solid fa-user"></i></div>
+          <div>
+            <p class="article-page__author-name">Amir Ali</p>
+            <p class="article-page__author-role">Product Manager</p>
+          </div>
+        </div>
+        <a href="../index.html#articles" class="btn btn--outline">More Articles</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

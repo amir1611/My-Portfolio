@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Setting Up Product Analytics That Actually Drive Decisions | Amir Ali</title>
+  <meta name="description" content="Moving beyond vanity metrics to build an analytics stack that informs your product roadmap and drives real decisions." />
+  <meta name="author" content="Amir Ali" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://amirali.netlify.app/articles/product-analytics.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://amirali.netlify.app/articles/product-analytics.html" />
+  <meta property="og:title" content="Setting Up Product Analytics That Actually Drive Decisions" />
+  <meta property="og:description" content="Moving beyond vanity metrics to build an analytics stack that informs your product roadmap and drives real decisions." />
+  <meta property="og:image" content="https://amirali.netlify.app/assets/img/og-preview.png" />
+  <meta property="og:site_name" content="Amir Ali – Product Manager" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Setting Up Product Analytics That Actually Drive Decisions" />
+  <meta name="twitter:description" content="Moving beyond vanity metrics to build an analytics stack that informs your product roadmap and drives real decisions." />
+  <meta name="twitter:image" content="https://amirali.netlify.app/assets/img/og-preview.png" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <header id="header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav__logo">amir<span>.</span></a>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="article-page">
+    <div class="container">
+      <a href="../index.html#articles" class="article-page__back"><i class="fa-solid fa-arrow-left"></i> Back to articles</a>
+
+      <span class="article-page__tag">Analytics</span>
+      <h1 class="article-page__title">Setting Up Product Analytics That Actually Drive Decisions</h1>
+      <div class="article-page__meta">
+        <span><i class="fa-regular fa-user"></i> Amir Ali</span>
+        <span><i class="fa-regular fa-calendar"></i> July 2025</span>
+        <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+      </div>
+
+      <div class="article-page__body">
+        <p>Most product teams have analytics. Few product teams use analytics to make decisions. The gap isn't about tools or data quality. It's about designing your analytics setup around decisions you actually need to make.</p>
+
+        <h2>The Vanity Metrics Trap</h2>
+        <p>Total page views. Number of registered users. Total transactions processed. These metrics feel good in board presentations but rarely change how you build your product. Vanity metrics go up and to the right but don't tell you what to do differently.</p>
+        <p>Actionable metrics, on the other hand, are tied to specific product decisions:</p>
+        <ul>
+          <li>"What percentage of new users complete onboarding?" tells you if your activation flow works</li>
+          <li>"How many merchants create a second subscription plan?" tells you if they found value in the first</li>
+          <li>"What's the time from signup to first transaction?" tells you how fast users reach their aha moment</li>
+        </ul>
+
+        <h2>Building Your Analytics Foundation</h2>
+
+        <h3>Step 1: Define Your North Star</h3>
+        <p>Choose one metric that best represents the value your product delivers. For Paydee, it was "monthly processed transaction volume." For an EdTech platform, it might be "weekly active learners." Everything else ladders up to this.</p>
+
+        <h3>Step 2: Map Your User Journey</h3>
+        <p>Break the user journey into stages: Acquisition, Activation, Engagement, Retention, Revenue. Define 2-3 key metrics for each stage. This gives you a complete picture without overwhelming you with data.</p>
+
+        <h3>Step 3: Implement Event Tracking Deliberately</h3>
+        <p>Don't track everything. Track events that correspond to meaningful user actions. A good rule of thumb: if you can't explain how tracking this event will inform a product decision, don't track it yet.</p>
+        <p>At Paydee, our core events were:</p>
+        <ol>
+          <li>Account created</li>
+          <li>KYC completed</li>
+          <li>First payment link created</li>
+          <li>First transaction received</li>
+          <li>Subscription plan created</li>
+          <li>Payout requested</li>
+        </ol>
+        <p>These six events told us most of what we needed to know about the merchant lifecycle.</p>
+
+        <h3>Step 4: Build a Weekly Review Ritual</h3>
+        <p>Analytics are useless if nobody looks at them. Establish a weekly product review where the team looks at key metrics together. Keep it to 30 minutes. Focus on changes and anomalies, not absolute numbers.</p>
+
+        <blockquote><p>The best analytics setup isn't the most comprehensive one. It's the one your team actually looks at every week.</p></blockquote>
+
+        <h2>Common Mistakes to Avoid</h2>
+        <ul>
+          <li><strong>Tracking too many events.</strong> More data doesn't mean better decisions. Start with 10-15 core events and add more only when you have specific questions to answer.</li>
+          <li><strong>Not tracking events consistently.</strong> Inconsistent event naming and properties make analysis painful. Create a tracking plan document and enforce naming conventions.</li>
+          <li><strong>Ignoring qualitative context.</strong> Numbers tell you what happened. User interviews and session recordings tell you why. Pair quantitative and qualitative data for better insights.</li>
+          <li><strong>Optimizing for metrics instead of outcomes.</strong> Metrics are proxies for user value. If improving a metric doesn't improve the user experience, you're measuring the wrong thing.</li>
+        </ul>
+
+        <p>Good product analytics is a competitive advantage, especially at early-stage companies where every decision matters. Invest the time to set it up right, and it becomes your most reliable guide for what to build next.</p>
+      </div>
+
+      <div class="article-page__footer">
+        <div class="article-page__author">
+          <div class="article-page__author-avatar"><i class="fa-solid fa-user"></i></div>
+          <div>
+            <p class="article-page__author-name">Amir Ali</p>
+            <p class="article-page__author-role">Product Manager</p>
+          </div>
+        </div>
+        <a href="../index.html#articles" class="btn btn--outline">More Articles</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

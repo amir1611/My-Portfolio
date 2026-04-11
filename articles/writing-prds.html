@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Art of Writing PRDs That Engineers Actually Read | Amir Ali</title>
+  <meta name="description" content="How to structure product requirement documents that drive alignment and reduce back-and-forth between product and engineering teams." />
+  <meta name="author" content="Amir Ali" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://amirali.netlify.app/articles/writing-prds.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://amirali.netlify.app/articles/writing-prds.html" />
+  <meta property="og:title" content="The Art of Writing PRDs That Engineers Actually Read" />
+  <meta property="og:description" content="How to structure product requirement documents that drive alignment and reduce back-and-forth between product and engineering teams." />
+  <meta property="og:image" content="https://amirali.netlify.app/assets/img/og-preview.png" />
+  <meta property="og:site_name" content="Amir Ali – Product Manager" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Art of Writing PRDs That Engineers Actually Read" />
+  <meta name="twitter:description" content="How to structure product requirement documents that drive alignment and reduce back-and-forth between product and engineering teams." />
+  <meta name="twitter:image" content="https://amirali.netlify.app/assets/img/og-preview.png" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <header id="header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav__logo">amir<span>.</span></a>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="article-page">
+    <div class="container">
+      <a href="../index.html#articles" class="article-page__back"><i class="fa-solid fa-arrow-left"></i> Back to articles</a>
+
+      <span class="article-page__tag">B2B SaaS</span>
+      <h1 class="article-page__title">The Art of Writing PRDs That Engineers Actually Read</h1>
+      <div class="article-page__meta">
+        <span><i class="fa-regular fa-user"></i> Amir Ali</span>
+        <span><i class="fa-regular fa-calendar"></i> November 2025</span>
+        <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+      </div>
+
+      <div class="article-page__body">
+        <p>I've written dozens of PRDs across three companies. The ones that worked shared something in common: engineers actually read them. The ones that failed gathered dust in Notion. Here's what I've learned about writing PRDs that drive alignment and action.</p>
+
+        <h2>Why Most PRDs Fail</h2>
+        <p>The typical PRD fails for one of three reasons:</p>
+        <ol>
+          <li><strong>Too long.</strong> A 20-page document feels like homework. Nobody reads it end to end, so critical details get missed.</li>
+          <li><strong>Too vague.</strong> "The system should be fast" isn't a requirement. It's a wish.</li>
+          <li><strong>Written too early.</strong> PRDs written before discovery is complete lock in assumptions and become outdated before engineering starts.</li>
+        </ol>
+
+        <h2>The Structure That Works</h2>
+        <p>After much iteration, I've settled on a PRD structure that consistently drives good outcomes:</p>
+
+        <h3>1. Problem Statement (2-3 sentences)</h3>
+        <p>What user problem are we solving? Why now? This should be crisp enough that anyone in the company can understand it without context.</p>
+
+        <h3>2. Success Metrics (3-5 metrics)</h3>
+        <p>How will we know this worked? Define specific, measurable outcomes. "Increase merchant activation rate from 45% to 65% within 3 months of launch."</p>
+
+        <h3>3. User Stories</h3>
+        <p>Write from the user's perspective. Focus on the job they're trying to do, not the feature you're building. Each story should follow: "As a [user], I want to [action] so that [outcome]."</p>
+
+        <h3>4. Scope and Non-Scope</h3>
+        <p>This is the most underrated section. Explicitly stating what you're NOT building prevents scope creep and aligns expectations. List things the team might reasonably assume are included but aren't.</p>
+
+        <h3>5. Design and User Flow</h3>
+        <p>Include Figma links and annotated screenshots. Visual specs reduce ambiguity by 10x compared to written descriptions alone. Walk through the happy path, then the edge cases.</p>
+
+        <h3>6. Technical Considerations</h3>
+        <p>Not technical specs, but context that helps engineering make good decisions. API constraints, third-party dependencies, performance requirements, data model implications.</p>
+
+        <h3>7. Open Questions</h3>
+        <p>Be honest about what you don't know yet. This invites collaboration and prevents engineers from discovering unknowns mid-sprint.</p>
+
+        <blockquote><p>A PRD is a communication tool, not a contract. If your team treats it as a fixed spec rather than a living document, you have a process problem, not a document problem.</p></blockquote>
+
+        <h2>Writing Tips</h2>
+        <ul>
+          <li><strong>Lead with context, not features.</strong> Engineers make better decisions when they understand the "why."</li>
+          <li><strong>Use tables for complex logic.</strong> Conditional logic in prose is hard to parse. A simple table with conditions and expected behaviors is clearer.</li>
+          <li><strong>Keep it under 3 pages.</strong> If it's longer, break it into smaller PRDs.</li>
+          <li><strong>Write the PRD collaboratively.</strong> Invite engineering and design input before finalizing. The best PRDs are co-authored.</li>
+          <li><strong>Update it as you learn.</strong> Mark changes clearly so the team knows what's evolved.</li>
+        </ul>
+
+        <p>The goal of a PRD isn't to document everything. It's to create enough shared understanding that the team can build the right thing without constant clarification. When an engineer reads your PRD and says "I get it, let's build this," you've done your job.</p>
+      </div>
+
+      <div class="article-page__footer">
+        <div class="article-page__author">
+          <div class="article-page__author-avatar"><i class="fa-solid fa-user"></i></div>
+          <div>
+            <p class="article-page__author-name">Amir Ali</p>
+            <p class="article-page__author-role">Product Manager</p>
+          </div>
+        </div>
+        <a href="../index.html#articles" class="btn btn--outline">More Articles</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

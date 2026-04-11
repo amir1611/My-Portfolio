@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data-Driven Decisions Without a Data Team | Amir Ali</title>
+  <meta name="description" content="Practical frameworks for PMs at early-stage startups to make informed product decisions with limited resources and no dedicated data team." />
+  <meta name="author" content="Amir Ali" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://amirali.netlify.app/articles/data-driven-decisions.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://amirali.netlify.app/articles/data-driven-decisions.html" />
+  <meta property="og:title" content="Data-Driven Decisions Without a Data Team" />
+  <meta property="og:description" content="Practical frameworks for PMs at early-stage startups to make informed product decisions with limited resources." />
+  <meta property="og:image" content="https://amirali.netlify.app/assets/img/og-preview.png" />
+  <meta property="og:site_name" content="Amir Ali – Product Manager" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Data-Driven Decisions Without a Data Team" />
+  <meta name="twitter:description" content="Practical frameworks for PMs at early-stage startups to make informed product decisions with limited resources." />
+  <meta name="twitter:image" content="https://amirali.netlify.app/assets/img/og-preview.png" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <header id="header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav__logo">amir<span>.</span></a>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="article-page">
+    <div class="container">
+      <a href="../index.html#articles" class="article-page__back"><i class="fa-solid fa-arrow-left"></i> Back to articles</a>
+
+      <span class="article-page__tag">Strategy</span>
+      <h1 class="article-page__title">Data-Driven Decisions Without a Data Team</h1>
+      <div class="article-page__meta">
+        <span><i class="fa-regular fa-user"></i> Amir Ali</span>
+        <span><i class="fa-regular fa-calendar"></i> January 2026</span>
+        <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+      </div>
+
+      <div class="article-page__body">
+        <p>At most startups, you don't have a dedicated data team. There's no data analyst building dashboards for you, no data engineer maintaining a warehouse. Yet you still need to make informed product decisions. Here's how I've approached this at early-stage companies.</p>
+
+        <h2>The Scrappy Analytics Stack</h2>
+        <p>You don't need a sophisticated data infrastructure to be data-driven. At Paydee, our analytics stack was deliberately simple:</p>
+        <ul>
+          <li><strong>Google Analytics</strong> for website and traffic metrics</li>
+          <li><strong>Mixpanel</strong> for product event tracking</li>
+          <li><strong>Looker Studio</strong> for combining data into visual dashboards</li>
+          <li><strong>Microsoft Clarity</strong> for session recordings and heatmaps</li>
+        </ul>
+        <p>Total cost: under $200/month. Time to set up: about a week. The key isn't the tools. It's knowing what to measure.</p>
+
+        <h2>The Three Questions Framework</h2>
+        <p>Before any major product decision, I ask three questions:</p>
+        <ol>
+          <li><strong>What does the quantitative data tell us?</strong> Usage metrics, conversion rates, funnel drop-offs. Numbers reveal patterns.</li>
+          <li><strong>What does the qualitative data tell us?</strong> User interviews, support tickets, session recordings. Stories explain the "why" behind the numbers.</li>
+          <li><strong>What's our confidence level?</strong> High-confidence decisions can move fast. Low-confidence decisions need more data or smaller experiments.</li>
+        </ol>
+
+        <h2>Practical Tactics That Work</h2>
+
+        <h3>Track the Right Events</h3>
+        <p>Most teams either track everything (drowning in data) or almost nothing (flying blind). Focus on tracking events that map to your key user actions: signup completion, first value moment, feature adoption, and conversion points.</p>
+
+        <h3>Build One Dashboard, Not Ten</h3>
+        <p>Create a single product health dashboard that you review weekly. Include acquisition, activation, retention, and revenue metrics. If you can't fit your key metrics on one screen, you're tracking too many things.</p>
+
+        <h3>Use Session Recordings Strategically</h3>
+        <p>Watch 5-10 session recordings per week, focusing on users who dropped off at key points in your funnel. This is the closest thing to watching someone use your product in real time.</p>
+
+        <blockquote><p>Being data-informed is better than being data-driven. Data should inform your decisions, not make them for you. Combine data with user empathy and product intuition.</p></blockquote>
+
+        <h2>When Data Isn't Enough</h2>
+        <p>Data tells you what happened, not why. And it can't tell you what hasn't been tried yet. Some of the best product decisions I've made were informed by data but ultimately driven by conviction built through deep user understanding.</p>
+        <p>The goal isn't to have perfect data. It's to have enough data to make better decisions than you would with gut feeling alone. Even a scrappy setup dramatically improves your batting average as a PM.</p>
+      </div>
+
+      <div class="article-page__footer">
+        <div class="article-page__author">
+          <div class="article-page__author-avatar"><i class="fa-solid fa-user"></i></div>
+          <div>
+            <p class="article-page__author-name">Amir Ali</p>
+            <p class="article-page__author-role">Product Manager</p>
+          </div>
+        </div>
+        <a href="../index.html#articles" class="btn btn--outline">More Articles</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

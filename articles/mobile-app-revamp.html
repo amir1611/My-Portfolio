@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lessons from Revamping a Mobile App with React Native | Amir Ali</title>
+  <meta name="description" content="Key takeaways from leading a full mobile app revamp focused on performance, stability, and UX consistency using React Native." />
+  <meta name="author" content="Amir Ali" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://amirali.netlify.app/articles/mobile-app-revamp.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://amirali.netlify.app/articles/mobile-app-revamp.html" />
+  <meta property="og:title" content="Lessons from Revamping a Mobile App with React Native" />
+  <meta property="og:description" content="Key takeaways from leading a full mobile app revamp focused on performance, stability, and UX consistency using React Native." />
+  <meta property="og:image" content="https://amirali.netlify.app/assets/img/og-preview.png" />
+  <meta property="og:site_name" content="Amir Ali – Product Manager" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lessons from Revamping a Mobile App with React Native" />
+  <meta name="twitter:description" content="Key takeaways from leading a full mobile app revamp focused on performance, stability, and UX consistency using React Native." />
+  <meta name="twitter:image" content="https://amirali.netlify.app/assets/img/og-preview.png" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <header id="header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav__logo">amir<span>.</span></a>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="article-page">
+    <div class="container">
+      <a href="../index.html#articles" class="article-page__back"><i class="fa-solid fa-arrow-left"></i> Back to articles</a>
+
+      <span class="article-page__tag">Mobile</span>
+      <h1 class="article-page__title">Lessons from Revamping a Mobile App with React Native</h1>
+      <div class="article-page__meta">
+        <span><i class="fa-regular fa-user"></i> Amir Ali</span>
+        <span><i class="fa-regular fa-calendar"></i> September 2025</span>
+        <span><i class="fa-regular fa-clock"></i> 6 min read</span>
+      </div>
+
+      <div class="article-page__body">
+        <p>Revamping a mobile app while keeping it live for existing users is like changing the engine of a plane mid-flight. At BrioHR, I led the mobile app revamp using modern React Native architecture. Here's what the experience taught me about managing large-scale mobile product changes.</p>
+
+        <h2>Why We Needed a Revamp</h2>
+        <p>The existing BrioHR mobile app had grown organically over several years. Each new module added its own patterns, navigation flows, and UI components. The result was an app that worked but felt inconsistent. Performance suffered, crash rates were creeping up, and adding new features took longer than it should.</p>
+        <p>We made the decision to revamp rather than rebuild from scratch. A full rewrite would have taken 6+ months and left us with no mobile presence during that period. A revamp let us modernize incrementally while keeping the app live.</p>
+
+        <h2>Key Decisions That Shaped the Project</h2>
+
+        <h3>1. Adopt a Modern Architecture Incrementally</h3>
+        <p>We migrated to modern React Native patterns module by module rather than all at once. This let us validate the new architecture with lower-risk modules before touching critical ones like leave management and attendance.</p>
+
+        <h3>2. Design System First</h3>
+        <p>Before touching any feature code, we built a shared component library. Buttons, cards, inputs, navigation patterns: all standardized. This was the foundation that made everything else faster and more consistent.</p>
+
+        <h3>3. Performance Budgets</h3>
+        <p>We set explicit performance budgets: app launch under 2 seconds, screen transitions under 300ms, list scrolling at 60fps. These weren't aspirational goals. They were hard requirements that every PR was measured against.</p>
+
+        <blockquote><p>A mobile app revamp is a product management challenge disguised as an engineering project. The hardest decisions are about scope, sequencing, and stakeholder communication, not code.</p></blockquote>
+
+        <h2>What I Learned as a PM</h2>
+
+        <h3>Communicate Progress Visually</h3>
+        <p>Stakeholders can't tell if your architecture is better by looking at code. Show before/after comparisons: load times, crash rates, user task completion rates. Make the improvement visible and measurable.</p>
+
+        <h3>Sequence by User Impact</h3>
+        <p>We prioritized revamping the modules that users interacted with most frequently. Leave requests and attendance check-in were the first modules to get the new treatment because they had the highest daily usage.</p>
+
+        <h3>Don't Forget the Migration Path</h3>
+        <p>Every change needed a smooth transition for existing users. We avoided breaking changes to the UI that would confuse regular users. Where we did make significant UX changes, we added subtle onboarding hints.</p>
+
+        <h3>Test on Real Devices</h3>
+        <p>Emulators lie. We maintained a testing rotation across budget Android devices common in the Malaysian market. Performance that was acceptable on a flagship device was often unusable on a 2-year-old mid-range phone.</p>
+
+        <h2>The Results</h2>
+        <p>The revamp delivered measurable improvements across every metric we tracked:</p>
+        <ul>
+          <li>Higher user engagement across all modules</li>
+          <li>Improved performance and stability</li>
+          <li>Consistent UX across the entire app</li>
+          <li>Faster feature development velocity for the engineering team</li>
+        </ul>
+
+        <p>The biggest lesson: a successful mobile revamp requires PM discipline more than engineering heroics. Know what to change, what to leave alone, and how to sequence the work so users benefit at every step rather than waiting months for a big reveal.</p>
+      </div>
+
+      <div class="article-page__footer">
+        <div class="article-page__author">
+          <div class="article-page__author-avatar"><i class="fa-solid fa-user"></i></div>
+          <div>
+            <p class="article-page__author-name">Amir Ali</p>
+            <p class="article-page__author-role">Product Manager</p>
+          </div>
+        </div>
+        <a href="../index.html#articles" class="btn btn--outline">More Articles</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
